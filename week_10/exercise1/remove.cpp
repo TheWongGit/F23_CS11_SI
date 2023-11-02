@@ -16,8 +16,10 @@ int main() {
     cout << "Which item do you want to delete? ";
     cin >> index_delete;
 
-    // YOUR CODE BELOW ---------------------
-    // YOUR CODE ABOVE ---------------------
+    for (int i = index_delete; i < size - 1; ++i) {
+        a[i] = a[i + 1];
+    }
+    size--;
 
     cout << "New array: ";
     for (int i = 0; i < size; i++) {

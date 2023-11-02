@@ -20,6 +20,11 @@ int main() {
     cin >> index;
 
     // YOUR CODE BELOW ---------------------
+    size++;
+    for (int i = size; i > index; --i){
+        a[i] = a[i - 1];
+    }
+    a[index] = value;
     // YOUR CODE ABOVE ---------------------
 
     cout << "New array: ";
